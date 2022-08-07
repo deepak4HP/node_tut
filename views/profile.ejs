@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Profile</title>
+</head>
+<body>
+    <h1>Weclome</h1>
+    <h2>Profile Page <%= user.name %></h2>	<!-- React {user.name}  Angular {{user.name}}  EJS    <%= user.name %>    -->
+    <ul>
+        <% user.skills.forEach((item)=>{ %>
+            <li><%= item %></li>
+        <% }) %>    
+    </ul>
+</body>
+</html>
